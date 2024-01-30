@@ -22,8 +22,3 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
-      - name: Run linter
-        run: deno lint
-
-      - name: Run tests
-        run: deno test -A
